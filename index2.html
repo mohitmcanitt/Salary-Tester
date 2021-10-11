@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<title>ML Salary Predicter</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
+
+<style>
+body  {
+    background-image: url({{ url_for('static', filename='images/aaa.jpg') }})
+}
+</style>
+<!--===============================================================================================-->
+</head>
+<body >
+	
+	<div class="limiter">
+		<div class="container-login100" >
+			<div class="wrap-login100">
+				
+					<span class="login100-form-logo">
+						
+						<span class="iconify" data-icon="heroicons-solid:currency-rupee" data-inline="false"></span>
+					</span>
+					<br></br>
+						<h3 style="color:white;font-size:150%;text-align: center">Predicted Salary Employee should be around</h3> <h1 style="color:white;font-size:150%;text-align: center">{{ prediction_text }}</h1> <h3 style="color:white;font-size:150%;text-align: center"> rupees per month</h3>
+						<br></br>
+						<div class="container-login100-form-btn">
+						<form action="{{ url_for('next')}}" method="post">
+							<button class="login100-form-btn" name="forwardBtn" type="submit">Want to Predict Again? Click it</button>
+						</form>
+						<br></br>
+						<br></br>
+						<br></br>
+						<button class="login100-form-btn" type="submit">
+							Made By Mohit Kumar Roll Number 205119056
+						</button>
+							
+					</div>
+				</div>
+						
+						
+						
+					</div>
+					<br></br>
+				
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/vendor/bootstrap/js/popper.js"></script>
+	<script src="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/vendor/daterangepicker/moment.min.js"></script>
+	<script src="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="C:\Users\Mohit Kumar\OneDrive\Desktop\login-form-v3\static/js/main.js"></script>
+
+</body>
+</html>
